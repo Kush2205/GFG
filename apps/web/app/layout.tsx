@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-
+import { ClerkProvider } from "@clerk/nextjs";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+    <html className = "bg-gradient-to-br from-black via-gray-900 to-green-600"
+    lang="en">
       <body className={geist.className}>{children}</body>
     </html>
+    </ClerkProvider>  
   );
 }
