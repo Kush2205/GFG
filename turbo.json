@@ -17,6 +17,11 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": [
+     "DATABASE_URL",
+    "CLERK_SECRET_KEY",
+    "GITHUB_TOKEN"
+  ]
 }
 
