@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001 --turbopack",
-    "prebuild" : "pnpm -w --filter @repo/database run prisma:generate",
+    "prebuild": "pnpm -w --filter @repo/database run prisma:generate",
     "build": "pnpm run prebuild && next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
@@ -14,9 +14,11 @@
   "dependencies": {
     "@clerk/nextjs": "^6.24.0",
     "@clerk/themes": "^2.2.55",
+    "@prisma/client": "^6.11.1",
     "axios": "^1.10.0",
     "motion": "^12.23.1",
     "next": "^15.3.0",
+    "prisma": "^6.11.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

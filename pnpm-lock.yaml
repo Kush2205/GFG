@@ -26,6 +26,9 @@ importers:
       '@clerk/themes':
         specifier: ^2.2.55
         version: 2.2.55
+      '@prisma/client':
+        specifier: ^6.11.1
+        version: 6.11.1(prisma@6.11.1)(typescript@5.8.2)
       axios:
         specifier: ^1.10.0
         version: 1.10.0
@@ -35,6 +38,9 @@ importers:
       next:
         specifier: ^15.3.0
         version: 15.3.0(react-dom@19.1.0)(react@19.1.0)
+      prisma:
+        specifier: ^6.11.1
+        version: 6.11.1(typescript@5.8.2)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -89,13 +95,13 @@ importers:
     dependencies:
       '@prisma/client':
         specifier: ^6.11.1
-        version: 6.11.1(prisma@6.11.1)
+        version: 6.11.1(prisma@6.11.1)(typescript@5.8.2)
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       prisma:
         specifier: ^6.11.1
-        version: 6.11.1
+        version: 6.11.1(typescript@5.8.2)
 
   packages/eslint-config:
     devDependencies:
@@ -653,7 +659,7 @@ packages:
       fastq: 1.19.1
     dev: true
 
-  /@prisma/client@6.11.1(prisma@6.11.1):
+  /@prisma/client@6.11.1(prisma@6.11.1)(typescript@5.8.2):
     resolution: {integrity: sha512-5CLFh8QP6KxRm83pJ84jaVCeSVPQr8k0L2SEtOJHwdkS57/VQDcI/wQpGmdyOZi+D9gdNabdo8tj1Uk+w+upsQ==}
     engines: {node: '>=18.18'}
     requiresBuild: true
@@ -666,7 +672,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      prisma: 6.11.1
+      prisma: 6.11.1(typescript@5.8.2)
+      typescript: 5.8.2
     dev: false
 
   /@prisma/config@6.11.1:
@@ -2809,7 +2816,7 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /prisma@6.11.1:
+  /prisma@6.11.1(typescript@5.8.2):
     resolution: {integrity: sha512-VzJToRlV0s9Vu2bfqHiRJw73hZNCG/AyJeX+kopbu4GATTjTUdEWUteO3p4BLYoHpMS4o8pD3v6tF44BHNZI1w==}
     engines: {node: '>=18.18'}
     hasBin: true
@@ -2822,6 +2829,7 @@ packages:
     dependencies:
       '@prisma/config': 6.11.1
       '@prisma/engines': 6.11.1
+      typescript: 5.8.2
     dev: false
 
   /prop-types@15.8.1:
@@ -3384,7 +3392,6 @@ packages:
   /typescript@5.8.2:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
-    dev: true
 
   /unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
