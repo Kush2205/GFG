@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001 --turbopack",
-    "build": "next build",
+    "prebuild" : "pnpm -w --filter @repo/database run prisma:generate",
+    "build": "pnpm run prebuild && next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
