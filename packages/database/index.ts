@@ -1,4 +1,5 @@
-import { PrismaClient } from '@prisma/client';
+// Export the prisma singleton from lib/prisma.ts
+export { prisma } from './lib/prisma.ts';
 
-const prisma: PrismaClient = new PrismaClient();
-export { prisma };
+// Re-export PrismaClient for types
+export type { PrismaClient } from '@prisma/client';

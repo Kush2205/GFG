@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma:generate": "pnpm prisma generate"
   },
-  "exports" : {
-    "./prisma" : "./index.ts"
+  "exports": {
+    "./prisma": "./index.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "@prisma/client": "^6.11.1",
     "@repo/typescript-config": "workspace:*",
     "prisma": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30"
   }
 }
