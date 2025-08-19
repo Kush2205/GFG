@@ -17,7 +17,7 @@ export async function POST(req:NextRequest , res: NextResponse){
             return NextResponse.json({error: "User not found"}, {status: 404});
         }
 
-        // Map platform to the correct field name
+       
         let updateData: any = {};
         switch(platform) {
             case 'github':

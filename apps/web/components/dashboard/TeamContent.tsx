@@ -5,14 +5,7 @@ import { motion } from 'motion/react';
 export default function TeamContent() {
   return (
     <div className="space-y-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h2 className="text-3xl font-bold text-white mb-2">Team Management</h2>
-        <p className="text-gray-400">Create and manage your coding teams</p>
-      </motion.div>
+      
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <motion.div
